@@ -5,7 +5,7 @@ using BepInEx.Logging;
 
 namespace Pause
 {
-    [BepInPlugin("com.epi.pause", "PAUSE", "1.0.3")]
+    [BepInPlugin("com.tost.pause", "PAUSESPT", "1.0.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static GameObject Hook;

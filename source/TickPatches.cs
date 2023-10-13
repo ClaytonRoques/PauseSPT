@@ -6,6 +6,7 @@ using System;
 using UnityEngine.UI;
 using TMPro;
 using BepInEx;
+using EFT.HealthSystem;
 
 namespace Pause
 {
@@ -50,7 +51,7 @@ namespace Pause
 
     public class ActiveHealthControllerClassPatch : ModulePatch 
     {
-        protected override MethodBase GetTargetMethod() => typeof(ActiveHealthControllerClass).GetMethod("ManualUpdate", BindingFlags.Instance | BindingFlags.Public);
+        protected override MethodBase GetTargetMethod() => typeof(ActiveHealthController).GetMethod("ManualUpdate", BindingFlags.Instance | BindingFlags.Public);
 
         [PatchPrefix]
         // prevents helath, hydration, energy updates

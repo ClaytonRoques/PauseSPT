@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>Epi-Pause</AssemblyName>
-    <Version>1.0.3</Version>
+    <AssemblyName>PauseSPT</AssemblyName>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -12,8 +12,8 @@
 
   <PropertyGroup>
     <!-- folder switch -->
-    <DepsPath>..\dependencies\3.6.1</DepsPath>
-    <DepsPath Condition="$(Configuration) == 'TARKOV_358'">..\dependencies\3.5.8</DepsPath>
+    <DepsPath>../dependencies/3.7.0</DepsPath>
+    <!-- <DepsPath Condition="$(Configuration) == 'TARKOV_ 358'">..\dependencies\3.5.8</DepsPath> -->
   </PropertyGroup>
 
   <ItemGroup>

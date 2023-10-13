@@ -260,7 +260,7 @@ namespace Pause
 
             // GameTimeClass seems to control the time of day
             // float_1 is the realTimeSinceStartup at the beginning of the game
-            var fi3 = typeof(GameTimeClass).GetField("float_1", BindingFlags.Instance | BindingFlags.NonPublic);
+            var fi3 = typeof(GameTimerClass).GetField("float_1", BindingFlags.Instance | BindingFlags.NonPublic);
 
             // get the underlying start date value from GameTimerClass nullable_0 private field
             var startDate = fi1.GetValue(_gameTimerClass) as DateTime?;
